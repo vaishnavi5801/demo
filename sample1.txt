@@ -1,0 +1,36 @@
+PS C:\Users\Lenovo\Desktop\gittt> git clone https://github.com/vaishnavi5801/demo.git
+Cloning into 'demo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+PS C:\Users\Lenovo\Desktop\gittt\demo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample1.txt
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Lenovo\Desktop\gittt\demo> git add sample1.txt
+PS C:\Users\Lenovo\Desktop\gittt\demo> git status
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sample1.txt
+
+PS C:\Users\Lenovo\Desktop\gittt\demo> git commit -m "sample1.txt"
+[main 3484e36] sample1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample1.txt
+PS C:\Users\Lenovo\Desktop\gittt\demo> git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 45.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vaishnavi5801/demo.git
+   df92b36..3484e36  main -> main
+PS C:\Users\Lenovo\Desktop\gittt\demo> 
